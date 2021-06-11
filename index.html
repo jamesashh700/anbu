@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b18a1e69b6.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>ANBU</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/app.js"></script>
+    <link rel="icon" href="./images/anbulogoblue.svg" type="image/png" sizes="32x32">
+</head>
+<body>
+    <!-- Scroll Up Button -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    
+    <!-- Nav Bar Starts -->
+    <nav class="navbar" id="navbar">
+        <div class="name-logo" id="name-logo">
+            <h1 class="gradient"><span>ANBU</span></h1>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#about" class="drop-down">About</a></li>
+            <li><a href="#tokenomics" class="drop-down">Tokenomics</a></li>
+            <li><a href="#mask" class="drop-down">Buy</a></li>
+        </ul>
+        <div class="drop-down" id="drop">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    
+    <!-- Nav Bar Ends -->
+
+    <!-- Home Section starts -->
+    <div class="homemax" id="home">
+        <div class="container">
+            <div class="home">
+                <div class="anbu-img">
+                    <img src="./images/anbulogoblue.svg" alt="anbu image will be here">
+                </div>
+                <div class="heading">
+                    <h2>WHAT IS ANBU</h2>
+                </div>
+                <div class="text">
+                    <p><span>ANBU</span> is a meme coin for anime lovers with mad value and moon potential. <span>ANBU</span> is made for brilliant and extremely talented persons
+                        Join the elite group of <span>ANBU</span> holders as we head to the moon.
+                    </p>
+                </div>
+                <a href="#">Buy <span>ANBU</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Section Ends -->
+
+    <!-- Xtics Section Starts -->
+
+    <div class="xtics" id="about">
+        <div class="container">
+            <div class="xtic reveal">
+                <h2>WHAT CAN <span>ANBU</span> DO</h2>
+                <div class="box one reveal">
+                    <div class="safu-img">
+                        <img src="./images/shield.svg" alt="shield">
+                    </div>
+                    <h3>SAFU</h3>
+                    <p><span>ANBU</span> token is named after the <span>ANBU</span>, a black ops division consisting of highly 
+                        skilled individuals who handle dangerous missions. <span>ANBU</span> devs true to their name 
+                        have put in anti-bot measures to prevent our project from being exploited by bots 
+                    </p>
+                </div>
+                <div class="box two reveal">
+                    <div class="meme-img">
+                        <img src="./images/meme.svg" alt="smiley-face">
+                    </div>
+                    <h3>MEME TOKEN</h3>
+                    <p>One of the first anime themed tokens out, if you're an anime lover this is the token
+                        for you. Join the <span>ANBU</span> and engage in missions that will propel us to the moon and beyond
+                    </p>
+                </div>
+                <div class="box three reveal">
+                    <div class="community-img">
+                        <img src="./images/community.svg" alt="community">
+                    </div>
+                    <h3>COMMUNITY DRIVEN</h3>
+                    <p><span>ANBU</span> devs will renounce ownership of the contract after listing on Pancakeswap, 
+                        allowing the community to decide the pace of development. <span>ANBU</span> token holders have 
+                        diamond hands, we do not yield to the enemy
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Xtic Section Ends -->
+
+    <!-- Tokenomics Begins -->
+    <div class="tokenomics" id="tokenomics">
+        <div class="container">
+            <div class="tokenomic reveal">
+                <h2>TOKENOMICS</h2>
+                <div class="details">
+                    <p>Total Supply: 1,000,000,000,000 <span>ANBU</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mask Section Begins -->
+    <div class="mask" id="mask">
+        <div class="container">
+            <div class="mask-box reveal">
+                <h3>Join the <b><span>ANBU</span></b></h3>
+                <div class="mask-img">
+                    <img src="./images/anbu1.svg" alt="anbu-mask">
+                </div>
+                <a href="#">Buy <span>ANBU</span></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Starts -->
+    <footer>
+        <div class="footer">
+            <ul class="foot">
+                <li>
+                    <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#telegram"><i class="fab fa-telegram"></i></a>
+                </li>
+                <li>
+                    <a href="#reddit"><i class="fab fa-reddit"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script type="text/javascript">
+        window.addEventListener('scroll', reveal);
+    
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+    
+          for(var i = 0; i < reveals.length; i++){
+    
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+    
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
+          }
+        }
+    </script>
+</body>
+</html>
